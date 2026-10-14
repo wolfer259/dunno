@@ -1,0 +1,165 @@
+:root {
+  --black: #000;
+  --gray: #bdbdbd;
+  --gray-hover: #d9d9d9;
+  --white: #fff;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--white);
+  color: var(--black);
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  background: var(--black);
+  color: var(--white);
+  padding: 1rem;
+  font-size: 1.25rem;
+}
+
+nav {
+  background: var(--gray);
+}
+
+nav > ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+nav li {
+  position: relative;
+}
+
+nav a {
+  display: block;
+  padding: 0.85rem 1.25rem;
+  color: var(--black);
+}
+
+nav a:hover,
+nav a:focus-visible {
+  background: var(--gray-hover);
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 100%;
+  background: var(--gray);
+  border-top: 1px solid var(--black);
+  z-index: 10;
+}
+
+.dropdown:hover > .submenu,
+.dropdown:focus-within > .submenu {
+  display: block;
+}
+
+.layout {
+  flex: 1;
+  display: flex;
+}
+
+main {
+  flex: 1;
+  padding: 1.5rem;
+  background: var(--white);
+  color: var(--black);
+}
+
+aside {
+  flex: 0 0 260px;
+  background: var(--black);
+  color: var(--white);
+  padding: 1rem;
+}
+
+aside ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+aside li {
+  flex: 0 0 50%;
+}
+
+aside a {
+  display: block;
+  padding: 0.6rem 0.5rem;
+  color: var(--white);
+}
+
+aside a:hover,
+aside a:focus-visible {
+  background: var(--white);
+  color: var(--black);
+}
+
+footer {
+  background: var(--black);
+  color: var(--white);
+  padding: 1rem;
+}
+
+footer ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+footer a {
+  color: var(--white);
+}
+
+footer a:hover,
+footer a:focus-visible {
+  text-decoration: underline;
+}
+
+a:focus-visible {
+  outline: 2px solid var(--white);
+  outline-offset: -2px;
+}
+
+nav a:focus-visible {
+  outline-color: var(--black);
+}
+
+@media (max-width: 767px) {
+  .layout {
+    flex-direction: column;
+  }
+
+  aside {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+}

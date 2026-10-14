@@ -1,21 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="cs">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>pičovina</title>
-    <link rel="stylesheet" href="index.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Základ stránky</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <section class="nav">
-            <a href="./nav1.html">Nav_1</a>
-            <a href="./nav2.html">Nav_2</a>
-        </section>
-    </header>
-    <h1>*titulek*</h1>
-    <footer>
-        <h6>Jiří Žižka</h6>
-    </footer>
+
+  <header>Header</header>
+
+  <nav aria-label="Hlavní navigace">
+    <ul>
+      <li><a href="./placeholder.html">polozka_1</a></li>
+      <li><a href="./placeholder.html">polozka_2</a></li>
+      <li class="dropdown">
+        <a href="./placeholder.html">polozka_3</a>
+        <ul class="submenu">
+          <li><a href="./placeholder.html">polozka_6</a></li>
+          <li><a href="./placeholder.html">polozka_7</a></li>
+          <li><a href="./placeholder.html">polozka_8</a></li>
+        </ul>
+      </li>
+      <li><a href="./placeholder.html">polozka_4</a></li>
+      <li><a href="./placeholder.html">polozka_5</a></li>
+    </ul>
+  </nav>
+
+  <div class="layout">
+    <main>main</main>
+
+    <aside aria-label="Postranní panel">
+      <ul>
+        <li><a href="./placeholder.html">polozka_1</a></li>
+        <li><a href="./placeholder.html">polozka_2</a></li>
+        <li><a href="./placeholder.html">polozka_3</a></li>
+        <li><a href="./placeholder.html">polozka_4</a></li>
+      </ul>
+    </aside>
+  </div>
+
+  <footer>
+    <ul>
+      <li><a href="./placeholder.html">polozka_1</a></li>
+      <li><a href="./placeholder.html">polozka_2</a></li>
+      <li><a href="./placeholder.html" target="_blank" rel="noopener noreferrer">polozka_3</a></li>
+    </ul>
+  </footer>
+
 </body>
 </html>
