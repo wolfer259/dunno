@@ -1,52 +1,232 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="cs">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>sumthing</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-  <header>Header</header>
-
-  <nav aria-label="Hlavní navigace">
-    <ul>
-      <li><a href="./placeholder.html">polozka_1</a></li>
-      <li><a href="./placeholder.html">polozka_2</a></li>
-      <li class="dropdown">
-        <a href="./placeholder.html">polozka_3</a>
-        <ul class="submenu">
-          <li><a href="./placeholder.html">polozka_6</a></li>
-          <li><a href="./placeholder.html">polozka_7</a></li>
-          <li><a href="./placeholder.html">polozka_8</a></li>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Zbrojnice Praha - e-shop se zbraněmi a doplňky</title>
+    <meta
+      name="description"
+      content="Pistole, pušky a doplňky pro střelnici, soutěž i lov. Ukázkový e-shop inspirovaný czfirearms.com."
+    />
+    <link rel="icon" href="./logo.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <a class="skip" href="#main">Přeskočit na obsah</a>
+    <header class="top">
+      <a href="index.html"
+        ><img
+          src="./logo.svg"
+          alt="Zbrojnice Praha - úvodní stránka"
+          width="180"
+          height="40"
+      /></a>
+      <nav aria-label="Hlavní navigace">
+        <ul>
+          <li><a href="index.html" aria-current="page">Domů</a></li>
+          <li><a href="detail.html">Produkt</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
         </ul>
-      </li>
-      <li><a href="./placeholder.html">polozka_4</a></li>
-      <li><a href="./placeholder.html">polozka_5</a></li>
-    </ul>
-  </nav>
+      </nav>
+    </header>
 
-  <div class="layout">
-    <main>main</main>
+    <main id="main">
+      <section class="hero" aria-labelledby="h-hero">
+        <img
+          src="img/ts3-ergo-960.webp"
+          srcset="
+            img/ts3-ergo-480.webp   480w,
+            img/ts3-ergo-960.webp   960w,
+            img/ts3-ergo-1600.webp 1600w
+          "
+          sizes="100vw"
+          width="1600"
+          height="900"
+          alt="Soutěžní pistole CZ TS 3 Orange"
+          fetchpriority="high"
+        />
+        <div class="hero-text">
+          <div>
+            <hgroup>
+              <h1 id="h-hero">Výkon, postavený na zkušenostech</h1>
+              <p>Pistole, pušky a doplňky pro střelnici, soutěž i lov</p>
+            </hgroup>
+            <p>
+              <a class="btn" href="detail.html"
+                >Prohlédnout novinku CZ TS 3 Orange</a
+              >
+            </p>
+          </div>
+        </div>
+      </section>
 
-    <aside aria-label="Postranní panel">
-      <ul>
-        <li><a href="./placeholder.html">polozka_1</a></li>
-        <li><a href="./placeholder.html">polozka_2</a></li>
-        <li><a href="./placeholder.html">polozka_3</a></li>
-        <li><a href="./placeholder.html">polozka_4</a></li>
-      </ul>
-    </aside>
-  </div>
+      <section class="sec wrap" id="o-nas" aria-labelledby="h-onas">
+        <h2 id="h-onas">Zbraně postavené kolem lidí, kteří je používají</h2>
+        <p>
+          Spojujeme generace zkušeností s neustálou snahou zlepšovat to, co
+          přijde dál. Každá platforma má přinášet větší kontrolu, jistotu a
+          konzistenci - na střelnici, v soutěži, v terénu i tehdy, když na
+          výkonu opravdu záleží.
+        </p>
+        <p>
+          Protože pokrok nikdy nekončí. Standardy se posouvají a očekávání
+          rostou. <mark>CZ je postavena, aby je splnila.</mark>
+        </p>
+        <p>
+          <small
+            >Střelné zbraně prodáváme pouze osobám s platným zbrojním
+            průkazem.</small
+          >
+        </p>
+      </section>
 
-  <footer>
-    <ul>
-      <li><a href="./placeholder.html">Dokumenty</a></li>
-      <li><a href="./placeholder.html">Kontakty</a></li>
-      <li><a href="./placeholder.html" target="_blank" rel="noopener noreferrer">Sociální sítě</a></li>
-    </ul>
-  </footer>
+      <section class="sec wrap" id="produkty" aria-labelledby="h-prod">
+        <hgroup>
+          <h2 id="h-prod">Nejnovější produkty</h2>
+          <p>Letošní novinky ze střelnic a soutěží</p>
+        </hgroup>
+        <ul class="grid">
+          <li>
+            <article class="card">
+              <img
+                src="img/ts3-ergo-480.webp"
+                srcset="img/ts3-ergo-480.webp 480w, img/ts3-ergo-960.webp 960w"
+                sizes="(max-width:600px) 100vw, 360px"
+                width="960"
+                height="540"
+                alt="CZ TS 3 Orange"
+                loading="lazy"
+                decoding="async"
+              />
+              <div>
+                <h3>CZ TS 3 Orange</h3>
+                <p>
+                  Vyvinutá pro moderní soutěžní střelbu - rychlost, přesnost a
+                  kontrola v ručně dolaďované ocelové platformě.
+                </p>
+                <p class="price"><data value="3549">od 3 549 USD</data></p>
+                <a class="btn" href="detail.html">Zobrazit detail</a>
+              </div>
+            </article>
+          </li>
+          <li>
+            <article class="card">
+              <img
+                src="img/p10-ported-480.webp"
+                srcset="
+                  img/p10-ported-480.webp 480w,
+                  img/p10-ported-960.webp 960w
+                "
+                sizes="(max-width:600px) 100vw, 360px"
+                width="960"
+                height="540"
+                alt="CZ P-10 C Ported"
+                loading="lazy"
+                decoding="async"
+              />
+              <div>
+                <h3>CZ P-10 C Ported</h3>
+                <p>
+                  Kompaktní platforma, která zůstane klidná při každém výstřelu:
+                  kontrola, pohodlí a jistota v jednom.
+                </p>
+                <p class="price">Cena na dotaz</p>
+                <a class="btn ghost" href="#">Brzy k dispozici</a>
+              </div>
+            </article>
+          </li>
+          <li>
+            <article class="card">
+              <img
+                src="img/cz457-target-480.webp"
+                srcset="
+                  img/cz457-target-480.webp 480w,
+                  img/cz457-target-960.webp 960w
+                "
+                sizes="(max-width:600px) 100vw, 360px"
+                width="960"
+                height="540"
+                alt="Malorážka CZ 457 Target"
+                loading="lazy"
+                decoding="async"
+              />
+              <div>
+                <h3>CZ 457 Target</h3>
+                <p>
+                  Postavená pro soutěž, vyladěná na přesnost. Malorážková
+                  platforma s opakovatelným výkonem.
+                </p>
+                <p class="price">Cena na dotaz</p>
+                <a class="btn ghost" href="#">Brzy k dispozici</a>
+              </div>
+            </article>
+          </li>
+        </ul>
+      </section>
 
-</body>
+      <section class="sec wrap" id="novinky" aria-labelledby="h-news">
+        <h2 id="h-news">Aktuality</h2>
+        <ul class="grid">
+          <li>
+            <article class="card">
+              <div>
+                <h3>
+                  <a href="#"
+                    >Střelecký tým CZ v top formě na USA Extreme Open 2026</a
+                  >
+                </h3>
+                <p><time datetime="2026-02-03">3. 2. 2026</time></p>
+              </div>
+            </article>
+          </li>
+          <li>
+            <article class="card">
+              <div>
+                <h3><a href="#">CZ představuje model CZ 457 Target</a></h3>
+                <p><time datetime="2026-01-22">22. 1. 2026</time></p>
+              </div>
+            </article>
+          </li>
+          <li>
+            <article class="card">
+              <div>
+                <h3><a href="#">CZ uvádí CZ 75 Legend</a></h3>
+                <p><time datetime="2026-01-20">20. 1. 2026</time></p>
+              </div>
+            </article>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <div class="wrap">
+        <section aria-labelledby="f-firma">
+          <h2 id="f-firma">Zbrojnice Praha s.r.o.</h2>
+          <p>IČO: <data value="12345678">123 45 678</data> (fiktivní údaj)</p>
+          <p>
+            Ukázkový web inspirovaný
+            <a href="https://www.czfirearms.com/" rel="noopener" target="_blank"
+              >czfirearms.com</a
+            >.
+          </p>
+          <p>Jiří Žižka</p>
+        </section>
+        <nav aria-labelledby="f-map">
+          <h2 id="f-map">Mapa webu</h2>
+          <ul>
+            <li>
+              <a href="index.html">Domovská stránka</a>
+              <ul>
+                <li><a href="index.html#produkty">Nejnovější produkty</a></li>
+                <li><a href="index.html#novinky">Aktuality</a></li>
+              </ul>
+            </li>
+            <li><a href="detail.html">Detail produktu CZ TS 3 Orange</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+  </body>
 </html>

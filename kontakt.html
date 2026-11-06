@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="cs">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Kontakt - Zbrojnice Praha</title>
+    <meta
+      name="description"
+      content="Kontaktní údaje, otevírací doba a mapa prodejny Zbrojnice Praha (fiktivní údaje)."
+    />
+    <link rel="icon" href="./logo.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <a class="skip" href="#main">Přeskočit na obsah</a>
+    <header class="top">
+      <a href="index.html"
+        ><img
+          src="./logo.svg"
+          alt="Zbrojnice Praha - úvodní stránka"
+          width="180"
+          height="40"
+      /></a>
+      <nav aria-label="Hlavní navigace">
+        <ul>
+          <li><a href="index.html">Domů</a></li>
+          <li><a href="detail.html">Produkt</a></li>
+          <li><a href="kontakt.html" aria-current="page">Kontakt</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="main" class="wrap sec">
+      <hgroup>
+        <h1>Kontakt</h1>
+        <p>Prodejna, poradenství a servis v Praze</p>
+      </hgroup>
+
+      <div class="two">
+        <section class="panel" aria-labelledby="h-prodejna">
+          <h2 id="h-prodejna">Prodejna</h2>
+          <address>
+            <strong>Zbrojnice Praha s.r.o.</strong><br />
+            Zbrojnická 12<br />
+            110 00 Praha 1<br />
+            Tel.: <a href="tel:+420123456789">+420 123 456 789</a><br />
+            E-mail:
+            <a href="mailto:obchod@zbrojnice-praha.example"
+              >obchod@zbrojnice-praha.example</a
+            >
+          </address>
+          <p>
+            IČO: <data value="12345678">123 45 678</data>,
+            <abbr title="Daňové identifikační číslo">DIČ</abbr>: CZ12345678
+            (fiktivní údaje)
+          </p>
+          <h3>Otevírací doba</h3>
+          <dl class="spec">
+            <dt>Po-Pá</dt>
+            <dd>
+              <time datetime="09:00">9:00</time>-<time datetime="17:30"
+                >17:30</time
+              >
+            </dd>
+            <dt>Sobota</dt>
+            <dd>
+              <time datetime="09:00">9:00</time>-<time datetime="12:00"
+                >12:00</time
+              >
+            </dd>
+            <dt>Neděle</dt>
+            <dd>zavřeno</dd>
+          </dl>
+          <p>
+            Příští den otevřených dveří:
+            <time datetime="2026-12-12T10:00">12. 12. 2026 od 10:00</time>.
+          </p>
+          <p>
+            <mark
+              >Střelné zbraně prodáváme pouze osobám s platným zbrojním
+              průkazem.</mark
+            >
+          </p>
+        </section>
+
+        <section class="panel" aria-labelledby="h-form">
+          <h2 id="h-form">Napište nám</h2>
+          <form action="#" method="post">
+            <label for="f-jmeno">Jméno</label>
+            <input
+              id="f-jmeno"
+              name="jmeno"
+              type="text"
+              autocomplete="name"
+              required
+            />
+            <label for="f-mail">E-mail</label>
+            <input
+              id="f-mail"
+              name="email"
+              type="email"
+              autocomplete="email"
+              required
+            />
+            <label for="f-zprava">Zpráva</label>
+            <textarea id="f-zprava" name="zprava" rows="5" required></textarea>
+            <p>
+              <button
+                class="btn"
+                type="submit"
+                style="border: 0; cursor: pointer; font: inherit"
+              >
+                Odeslat zprávu
+              </button>
+            </p>
+            <p>
+              <small>Formulář je zatím jen ukázka, web nemá backend.</small>
+            </p>
+          </form>
+        </section>
+      </div>
+
+      <section aria-labelledby="h-mapa" style="margin-top: 32px">
+        <h2 id="h-mapa">Jak nás najdete</h2>
+        <iframe
+          title="Mapa - okolí Staroměstského náměstí v Praze (orientační)"
+          src="https://www.openstreetmap.org/export/embed.html?bbox=14.4160%2C50.0810%2C14.4290%2C50.0890&amp;layer=mapnik&amp;marker=50.0850%2C14.4225"
+          loading="lazy"
+          referrerpolicy="no-referrer"
+        ></iframe>
+        <p><small>Mapa je orientační, adresa prodejny je fiktivní.</small></p>
+      </section>
+    </main>
+
+    <footer>
+      <div class="wrap">
+        <section aria-labelledby="f-firma">
+          <h2 id="f-firma">Zbrojnice Praha s.r.o.</h2>
+          <p>IČO: <data value="12345678">123 45 678</data> (fiktivní údaj)</p>
+          <p>
+            Ukázkový web inspirovaný
+            <a href="https://www.czfirearms.com/" rel="noopener" target="_blank"
+              >czfirearms.com</a
+            >.
+          </p>
+          <p>Jiří Žižka</p>
+        </section>
+        <nav aria-labelledby="f-map">
+          <h2 id="f-map">Mapa webu</h2>
+          <ul>
+            <li>
+              <a href="index.html">Domovská stránka</a>
+              <ul>
+                <li><a href="index.html#produkty">Nejnovější produkty</a></li>
+                <li><a href="index.html#novinky">Aktuality</a></li>
+              </ul>
+            </li>
+            <li><a href="detail.html">Detail produktu CZ TS 3 Orange</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>

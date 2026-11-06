@@ -1,1 +1,0 @@
-https://zizkaji25.llmp.spse-net.cz/
