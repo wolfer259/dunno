@@ -8,8 +8,6 @@ https://zizkaji25.llmp.spse-net.cz/
 
 # Checklist zadání – Zbrojnice Praha (inspirováno czfirearms.com)
 
-Čísla řádků odpovídají aktuálním souborům v tomto balíčku.
-
 ## Struktura a architektura
 
 |Požadavek|Kde je splněno|
@@ -64,7 +62,7 @@ https://zizkaji25.llmp.spse-net.cz/
 |Min. 1 `<iframe>`|`kontakt.html` ř. 68 (OpenStreetMap)|
 |Logo z `./logo.svg`|`index.html`/`detail.html`/`kontakt.html` ř. 14; favicon ř. 8|
 |Obrázky z inspirační stránky|`convert-images.sh` obsahuje zdrojové URL z czfirearms.com|
-|Rastry pouze WEBP|všechny `src`/`srcset` odkazují na `img/\\\*.webp` (soubory vznikají skriptem `convert-images.sh`)|
+|Rastry pouze WEBP|všechny `src`/`srcset` odkazují na `img/\\\\\\\*.webp` (soubory vznikají skriptem `convert-images.sh`)|
 |Min. 5 obrázků v detailu, všechny se `srcset`|`detail.html` ř. 38, 47, 56, 66, 74, 89 (článek) a ř. 97 (aside) = 7 obrázků|
 |Responzivní obrázky na úvodní stránce|`index.html` ř. 26, 50, 58, 66|
 
